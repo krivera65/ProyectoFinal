@@ -61,3 +61,6 @@ Para lograr crear estos dos enemigos, tomamos los prefab de los respectivos enem
 3.	Llegada al objetivo final
 
     Cuando Aiden llegue a la cámara que alberga el enigma papyrus y lo toque, se desplegará una pantalla que indicará la           victoria. En este momento se activará el script de win or lose (Life y ScoreOnDeath), marcando el logro del objetivo y dando      fin al desafío, reconociendo el éxito del jugador al completar la tarea principal del juego.
+
+
+   Demo de nuestro juego:
