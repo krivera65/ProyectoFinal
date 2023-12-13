@@ -34,7 +34,11 @@ Pasos para el desarrollo de nuestro juego:
  	
 -	Personaje principal (Aiden)
 
+
       El personaje principal, un mago modelado a partir de un personaje de Mixamo llamado Abe, fue dotado de funcionalidades            mediante una serie de scripts. Implementamos el script ShooterMovInput, permitiendo el disparo y el salto del personaje,          junto con el script ForwardMovement para asegurar su movimiento constante hacia adelante. Además, incorporamos la acción          dash, activada por las teclas A y D para moverse lateralmente, permitiendo al jugador sortear obstáculos que obstaculicen         su camino.
+
+  ![IMG_3393](https://github.com/krivera65/ProyectoFinal/assets/143332773/cfb4bbfe-d780-4940-a9fb-c9819aaf891d)
+
 
 ![IMG_3378](https://github.com/krivera65/ProyectoFinal/assets/143332773/b3cc6071-2aa6-46bc-ac20-ee96848e7d7d)
 ![IMG_3379](https://github.com/krivera65/ProyectoFinal/assets/143332773/c7cbcaf3-49d2-4981-8a0a-acbb7c33696b)
@@ -44,14 +48,16 @@ Para transformar los disparos en bolas de fuego, ajustamos el color de las balas
 Para mantener siempre al personaje mirando hacia adelante, la cámara se posicionó detrás de él utilizando el shot point, lo       que crea la ilusión de que la cámara sigue sus movimientos. Esto asegura una perspectiva constante y dirigida hacia               adelante para el jugador.
   
 -	Personajes secundarios (Enemigos)
+Para lograr crear estos dos enemigos, tomamos los prefab de los respectivos enemigos y luego a cada uno se les añadieron los Script ForwardMovement, Life y ScoreOnDeath. La única diferencia entre ambos enemigos fue que al prefab del lobo se le dio una veocidad más rápida que al prefab del esqueleto.
+
         Lobos
- 	      Esqueletos
-        Mago enemigo 
+ 	![IMG_3392](https://github.com/krivera65/ProyectoFinal/assets/143332773/2b13fa9a-755f-4314-8637-ab9398b1d27b)
 
-3.	Mecanismo de recuperación:
+ 	     Esqueletos
+   ![IMG _3391](https://github.com/krivera65/ProyectoFinal/assets/143332773/87dc2bab-4383-4a74-a54c-c8e1012871fb)
 
-    Dentro del bosque, dispersas entre el entorno, se encuentran pociones vitales que amplificarán la supervivencia y la fuerza       del personaje principal en su búsqueda por alcanzar el enigma papyrus. Al recolectar estas pociones, se añadirá una barra de      vida al personaje, restaurando su vitalidad en caso de haber sido dañado por ataques enemigos. Estas pócimas actúan como          recursos fundamentales para reforzar su resistencia y asegurar su éxito en el camino hacia el objetivo final.
 
-4.	Llegada al objetivo final
 
-    Cuando Aiden llegue a la cámara que alberga el enigma papyrus y lo adquiera, se desplegará una pantalla que indicará la           victoria. En este momento se activará el script de win or lose (Life y ScoreOnDeath), marcando el logro del objetivo y dando      fin al desafío, reconociendo el éxito del jugador al completar la tarea principal del juego.
+3.	Llegada al objetivo final
+
+    Cuando Aiden llegue a la cámara que alberga el enigma papyrus y lo toque, se desplegará una pantalla que indicará la           victoria. En este momento se activará el script de win or lose (Life y ScoreOnDeath), marcando el logro del objetivo y dando      fin al desafío, reconociendo el éxito del jugador al completar la tarea principal del juego.
