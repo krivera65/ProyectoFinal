@@ -1,4 +1,9 @@
 # Ember Quest: El secreto de la mansión ardiente
+
+Link para acceder a la descarga de nuestro video juego:
+
+https://1drv.ms/u/s!At8xKwoSHBPGgtNVxdQrTmXhV2fWCQ?e=IxGthH
+
 Objetivos del juego:
 
 En busca de la Mansión Ardiente, Aiden dominará la magia del fuego para vencer a criaturas y guardianes en su camino. Enfrentándose a obstáculos llameantes, empleará sus habilidades mágicas estratégicamente para acceder al pergamino secreto. Mientras recolecta y usa sabiamente las pociones dispersas, se asegurará de mantener su vitalidad para enfrentar desafíos cruciales. Navegar con astucia entre trampas y desafíos será esencial para desentrañar el enigma resguardado en la cámara del Enigma Papyrus.
@@ -26,16 +31,22 @@ Pasos para el desarrollo de nuestro juego:
 -	El terreno adquirió un aspecto negro con detalles de fuego gracias a la inclusión de una textura de roca de Unity y la descarga de imágenes de internet para pintar los detalles de fuego en la textura del terreno.
 
 -	En relación con la simulación de lava, el efecto se logró al modificar el material water utilizado en clase a través del shader graph. La textura de agua fue reemplazada por una de lava obtenida en línea, ajustando sus parámetros para generar un movimiento más discreto, disminuyendo las olas y aumentando el valor de alfa para intensificar el color. Además, se alteró la velocidad de la textura para desacelerar el flujo aparente de la lava en el entorno, logrando así una representación más realista y evocativa del elemento en la escena de la mansión.
-
-  ![Sin título](https://github.com/krivera65/ProyectoFinal/assets/143332773/4c048994-5c2b-4eca-9dc7-a4d5d3ad9452)
-
   
+![Sin título](https://github.com/krivera65/ProyectoFinal/assets/143332773/b415aa2d-6e4a-43b4-89d7-55cdb793ec3c)
+
+![gif lava](https://github.com/krivera65/ProyectoFinal/assets/143332773/1164cf81-66a9-40b3-8297-cc839589128c)
+
+![lava level gif - Made with Clipchamp](https://github.com/krivera65/ProyectoFinal/assets/143332773/98be684c-a8a0-4f0d-85f4-6c121f7c453e)
+
+
 2.	Creación de personajes:
  	
 -	Personaje principal (Aiden)
 
 
       El personaje principal, un mago modelado a partir de un personaje de Mixamo llamado Abe, fue dotado de funcionalidades            mediante una serie de scripts. Implementamos el script ShooterMovInput, permitiendo el disparo y el salto del personaje,          junto con el script ForwardMovement para asegurar su movimiento constante hacia adelante. Además, incorporamos la acción          dash, activada por las teclas A y D para moverse lateralmente, permitiendo al jugador sortear obstáculos que obstaculicen         su camino.
+
+      Con la incorporación de un Capsule Collider y la asignación de un Rigidbody, se ha evitado que el personaje atraviese el          suelo. Esta inclusión facilita una interacción más precisa con el entorno. Ahora, el personaje responde a las fuerzas             físicas del entorno al moverse y al colisionar con el suelo, logrando así evitar pasar a través de él. Esto se logra              gracias a la detección de colisiones proporcionada por el Collider y a la simulación física generada por el Rigidbody.
 
   ![IMG_3393](https://github.com/krivera65/ProyectoFinal/assets/143332773/cfb4bbfe-d780-4940-a9fb-c9819aaf891d)
 
@@ -62,5 +73,11 @@ Para lograr crear estos dos enemigos, tomamos los prefab de los respectivos enem
 
     Cuando Aiden llegue a la cámara que alberga el enigma papyrus y lo toque, se desplegará una pantalla que indicará la           victoria. En este momento se activará el script de win or lose (Life y ScoreOnDeath), marcando el logro del objetivo y dando      fin al desafío, reconociendo el éxito del jugador al completar la tarea principal del juego.
 
+Video de niveles de velocidad a medida que va aumentando la dificultad:
 
-   Demo de nuestro juego:
+![levels walkthrough gif - Made with Clipchamp](https://github.com/krivera65/ProyectoFinal/assets/143332773/db6288b2-2b73-4f0a-9e95-ffc18ee015e0)
+
+
+
+   Demo de nuestro juego:![gameplay demo gif - Made with Clipchamp](https://github.com/krivera65/ProyectoFinal/assets/143332773/e490cc3b-fa57-457e-8390-77c427923949)
+
